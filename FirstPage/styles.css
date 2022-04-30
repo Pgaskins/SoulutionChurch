@@ -1,0 +1,22 @@
+
+img{
+    height: 300px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 370px;
+}
+img-fluid{
+    height: 100px;
+    width: 100px;
+}
+@media (min-width: 768px){
+    .new-input{
+        width: 50%;
+    }
+}
+.navbar{
+    color: orange;
+}
+.nav-item{
+    
+}
