@@ -24,10 +24,10 @@
                     <a href="#learn" class="nav-link">Soulution Programming</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#questions" class="nav-link">Soulution Sunday</a>
+                    <a href="#questions" class="nav-link">Frequently Asked Questions</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#instructor" class="nav-link">Soulution Saturday</a>
+                    <a href="#instructor" class="nav-link">News Letter </a>
                 </li>
                 <li class="nav-item">
                     <a href="#Schools" class="nav-link">Soulution Discipleship</a>
@@ -52,7 +52,7 @@
                       soul and spirit of every student equiping  
                     them with the tools to make a kingdom impact 
                 in the marketplace.</p>
-                <button class="btn btn-warning btn-lg">Enroll Today</button>
+                <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Enroll Today</button>
                 </div>
                 <img class="img-fluid" src="./love1.png"  alt="">
 
@@ -60,7 +60,7 @@
         </div>
     </section>
     <!--NewsLetter-->
-    <section class="bg-dark text-light p-5">
+    <section class="bg-dark text-light p-5" id="instructor">
         <div class="d-md-flex justify-content-between align-items-center">
             <h3>Sign up for Newsletter</h3>
             <div class="input-group new-input">
@@ -106,7 +106,7 @@
         </div>
     </section>
     <!--ViewLearn-->
-    <section>
+    <section id="learn">
       <div class="container bg-primary">
           <div class="row align-items-center justify-content-between">
              <div class="col-md p-0">
@@ -172,9 +172,34 @@
 
         </div>
     </section>
-    <sectio id="about" class="p-5 bg-warning">
+    <section id="About" class="p-5 bg-warning">
+        <div class="container">
+            <h2 class="text-center text-white">About Percell</h2>
+            <p>
+                Percell has been called to make disciples of Jesus Christ within every sphere that he has 
+                had the opportunity to touch, from NFL, USA Track and Field, Secondary Education, local, state 
+                and federal government, Amazon Software Development and everything inbetween. Percell teaches the word of God
+                with a prophetic edge, he teaches the Kingdom message of hope, salvation and power. He desires that all will experience true freedom and the demostration of the Kingdon reality 
+                in the life of the beleiver. Percell loves seeing the hidden glory in others be revealed through 
+                the power of Gods word, The grace upon Percell's life will provoke, unlock, release, instruct, rebuke, revive, empower and restore other back to right relationship with the Father.
+                Percell is a Husband, Son, Father, Friend, Coach, Teacher and Lover of People, Percell accepts the full measure of the
+                call of God to surrender and obey.   
+            </p>
+            <a href="#"><i class="bi bi-facebook text-dark"></i></a>
 
+            <div class="row g-3"></div>
+                <div class="col-md-6 col-lg-3">
+                    <div class=" bg-warning ">
+                        <div class="card-body text-center">
+                            <img src="./pg.jpeg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3 text-center">Percell Gaskins Sr.</h3>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </section>
+    <!--ContactInfo-->
+    
      <!-- The video -->
      <video autoplay muted loop id="myVideo">
         <source src="./IMG_1605.mp4" type="video/mp4">
@@ -182,12 +207,61 @@
   <!-- Optional: some overlay text to describe the video -->
   <div class="content">
     <h1>Welcome to Soulution Church</h1>
-    <h2>Love never fails</h2>
-    <p>Lorem ipsum...</p>
-    <!-- Use a button to pause/play the video with JavaScript -->
-    <button id="myBtn" onclick="myFunction()">Pause</button>
+    <h2>Love never fails....</h2>
+    <p>Matt6:33</p>
   </div> 
-
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+        <p class="lead">Copyright &copy; 2022 Soulution Percell Gaskins Sr</p>
+        <a href="#" class="poition-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+    </div>
+  </footer>
+  <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enroll">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill out this form and we will get back with you</p>
+          <form action="">
+              <div class="mb-3">
+                  <label for="first name" class="col-form-label">
+                      First Name
+                  </label>
+                  <input type="text" class="form-control" id="first name">
+              </div>
+              <div class="mb-3">
+                <label for="last name" class="col-form-label">
+                    Last Name
+                </label>
+                <input type="text" class="form-control" id="last name">
+            </div>
+            <div class="mb-3">
+                <label for="first name" class="col-form-label">
+                    Email
+                </label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="col-form-label">
+                    Phone
+                </label>
+                <input type="text" class="form-control" id="phone">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 
 
