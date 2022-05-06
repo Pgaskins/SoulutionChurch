@@ -34,14 +34,11 @@
     width: 100%;
     padding: 10px;
   }
-  #12pillars{
-    background-image: url("/w3images/photographer.jpg");
-  background-color: #cccccc;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  #showcases{
+    background-image: url("family.jpeg");
+  }
+  #nav-itemf{
+      size: 10px;
   }
   
   
