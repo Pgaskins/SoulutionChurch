@@ -1,65 +1,460 @@
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
 
+html {
+  overflow-x: hidden;
+}
 
- /* Style the video: 100% width and height to cover the entire window */
- #myVideo {
-    /* Telling our absolute positioned video to 
-    be relative to this element */
-    
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  
-    position: relative;
-    top: 0;
-    left: 0;
-  
-    /* Will not allow the video to overflow the 
-    container */
-    overflow: hidden;
-  
-    /* Centering the container's content vertically 
-    and horizontally */
-    text-align: center;
+.boxes_wrap {
+  z-index: 99999999999;
+  padding: 3rem;
+}
+
+.boxes_wrap .card {
+  width: 18rem;
+}
+
+.paraVideo {
+  width: 100%;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: -999;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+ 
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-img,
+.card-img-top {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px 50px;
+}
+#showcases {
+  background-image: url("family.jpeg");
+}
+#nav-itemf {
+  size: 10px;
+}
+#showcase {
+  padding: 50px 0 20px 0;
+  height: max-content;
+}
+#showcase > img {
+  width: 370px;
+  object-fit: contain;
+  height: 74px;
+  margin-bottom: 20px;
+}
+img-fluid {
+  height: 300px;
+  width: 100px;
+}
+@media (min-width: 768px) {
+  .new-input {
+    width: 50%;
+  }
+}
+.navbar {
+  color: orange;
+  padding: 10px 0 !important;
+}
+
+.c_container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.navbar .nav_logo {
+  display: flex;
+  z-index: 999;
+}
+
+.navbar .nav_logo,
+.nav_logo_mb {
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.nav-item {
+}
+
+.sec_2_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sec_2_main > div {
+  display: flex;
+  align-items: center;
+}
+
+.sec_2_main img {
+  width: 330px;
+}
+
+#learn {
+  width: 100%;
+  min-height: 100vh;
+  /* background-image: url("./pic1.jpeg"); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* position: fixed; */
+  /* z-index: 9999; */
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec_4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  flex-direction: column;
+  padding: 50px 50px;
+}
+
+.s4_r {
+  text-align: center;
+  margin: 30px 0;
+}
+.accordion-button {
+  margin: 10px 0;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+#questions {
+  padding: 3rem;
+}
+
+#questions h2 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+#About {
+  padding: 3rem;
+}
+
+#About .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+#About h2 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.ab_l {
+  margin-bottom: -150px;
+}
+
+.ab_l h3 {
+  font-weight: 800;
+}
+
+.ab_r {
+  background-color: #fff;
+  min-height: 450px;
+  height: max-content;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 20px;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.ab_r p {
+  opacity: 0.8;
+}
+
+.sc_r {
+  height: max-content;
+  position: sticky;
+  top: 100px;
+  background: #fff;
+  margin: 50px 0;
+  width: 100%;
+  padding: 3rem;
+}
+
+.sc_wrap {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sc_l {
+  /* width: 50%; */
+}
+
+.sc_l img {
+  width: 400px;
+  object-fit: unset;
+}
+
+.sc_r h2 {
+  color: rgba(255, 193, 7);
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.sc_r p {
+  color: #000;
+  opacity: 0.8;
+}
+
+#pillars {
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-image: url("./JT.jpeg"); */
+  width: 100%;
+  min-height: 100vh;
+  /* background-attachment: fixed; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+#pillars > div {
+  background: #0000007d;
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1250px) {
+  .nav-link {
+    font-size: 0.8rem;
+  }
+}
+
+html .mb {
+  display: none;
+}
+html .navbar_toggler {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .c_container {
+    justify-content: space-between;
+    width: 96%;
+  }
+  html .navbar_toggler {
     display: flex;
+  }
+  .cus_nav_menu {
+    position: absolute;
+    min-height: 100vh;
+    background-color: #212529;
+    width: 300px;
+    left: -1000px;
+    padding: 30px;
+    top: 0;
+    transition: 0.7s ease;
+  }
+  .show_menu {
+    left: 0;
+  }
+  .navbar_toggler {
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    z-index: 9999999999;
+  }
+  .navbar_toggler img {
+    width: 25px;
+    object-fit: contain;
+    height: unset;
+  }
+  .navbar-nav {
+    min-height: 63vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+  }
+  .navbar-nav .nav-link {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  html .mb {
+    display: flex;
+    /* margin-top: -100px; */
+  }
+  .mb img {
+    width: 50px;
+    height: 50px;
+    margin-left: -18px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sc_wrap {
+    flex-direction: column;
+  }
+  .sc_l img {
+    width: 300px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .sc_r {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sec_2_main > div {
+    flex-direction: column-reverse;
+  }
+  .sec_2_main > div img {
+    margin: 15px 0;
+  }
+  #showcase {
+    padding: 50px 0;
+  }
+  .ab_r {
+    width: 100%;
+    min-height: unset;
+    padding: 135px 19px 20px 20px;
+  }
+  img {
+    width: 265px;
+    height: 265px;
+  }
+  #pillars > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .boxes_wrap,
+  #questions,
+  #About {
+    padding: 3rem 1rem;
+  }
+}
+
+@media screen and (max-width: 693px) {
+  .sc_l img {
+    width: 225px;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .sc_r,
+  #pillars {
+    padding: 3rem 1rem;
+  }
+  .sc_r h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 527px) {
+  .sc_l {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  
-  /* Add some content at the bottom of the video/page */
-  .content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
+  .sc_l img {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sec_2_main h1 {
+    font-size: 1.3rem;
+  }
+  .sec_2_main > div div p {
+    font-size: 1rem;
+  }
+  .sec_2_main img {
+    width: 80%;
+  }
+  .sec_4 {
+    padding: 50px 30px 0px 30px;
+  }
+  .sec_4 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec_4 p {
+    font-size: 1rem;
+  }
+  #questions h2,
+  #About h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #showcase > img {
+    width: 90%;
+  }
+  .boxes_wrap .card {
     width: 100%;
-    padding: 10px;
   }
-  #showcases{
-    background-image: url("family.jpeg");
+  .ab_l img {
+    width: 220px;
+    height: 220px;
   }
-  #nav-itemf{
-      size: 10px;
+  .lead {
+    font-size: 1rem;
   }
-  
-  
-  img{
-    height: 300px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    width: 370px;
-}
-img-fluid{
-    height: 300px;
-    width: 100px;
-}
-@media (min-width: 768px){
-    .new-input{
-        width: 50%;
-    }
-}
-.navbar{
-    color: orange;
-}
-.nav-item{
-    
 }
